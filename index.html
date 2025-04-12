@@ -75,33 +75,57 @@
     }
 
     .navbar {
-      background-color: #f60509;
+      background-color: #ad7948;
     }
 
     .navbar-nav .nav-link,
     .navbar-brand,
     .dropdown-menu .dropdown-item {
-      color: white !important;
+      color: #000;
       font-family: "hobo-std", sans-serif;
     }
 
     .dropdown-menu {
+      background-color: #ad7948;
+    }
+
+    a.dropdown-header {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    a.dropdown-header:hover {
       background-color: #c50404;
     }
 
+    .navbar .dropdown-menu .dropdown-item {
+  font-family: "Segoe UI", Roboto, "San Francisco", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
     .dropdown-menu .dropdown-item:hover {
-      background-color: #a00303;
+      background-color: #c50404;
     }
 
     .social-icons a {
-      color: white;
+      color: #000000;
+      text-shadow: #c50404;
       margin-right: 1rem;
       font-size: 1.5rem; /* doubled size */
+    }
+
+    .social-icons a:hover {
+      color:  #c50404;
     }
 
     .logo {
       max-width: 300px; /* doubled size */
     }
+
   </style>
 </head>
 
@@ -115,7 +139,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container d-flex justify-content-between align-items-center">
-
+  
       <!-- Social Icons -->
       <div class="social-icons d-flex align-items-center">
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -123,67 +147,82 @@
         <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
-
+  
       <!-- Brand and Toggle -->
       <a class="navbar-brand d-lg-none" href="/">Say It With Wood</a>
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
       <!-- Navigation Links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-
+  
           <!-- Products -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/cleft-chestnut-products/">Cleft Chestnut</a></li>
-              <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Sawn Products</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/sawn-products/beams/">Beams</a></li>
-                  <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/sawn-products/battens/">Battens</a></li>
-                  <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/sawn-products/cladding/">Cladding</a></li>
-                  <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/sawn-products/laths/">Laths</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/kiln-dried-firewood/">Kiln-Dried Firewood</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/offcuts/">By-products</a></li>
+  
+              <!-- Building Materials -->
+              <li><a class="dropdown-header" href="#">Building Materials</a></li>
+              <li><a class="dropdown-item" href="#">Timber & Landscaping</a></li>
+              <li><a class="dropdown-item" href="#">Slabwood</a></li>
+              <li><a class="dropdown-item" href="#">Hardwood Chip</a></li>
+              <li><a class="dropdown-item" href="#">Cladding</a></li>
+  
+              <!-- Boundaries & Screens -->
+              <li><a class="dropdown-header" href="#">Boundaries & Screens</a></li>
+              <li><a class="dropdown-item" href="#">Fencing</a></li>
+              <li><a class="dropdown-item" href="#">Screening/Panels</a></li>
+              <li><a class="dropdown-item" href="#">Gates</a></li>
+  
+              <!-- Garden & Outdoor Living -->
+              <li><a class="dropdown-header" href="#">Garden & Outdoor Living</a></li>
+              <li><a class="dropdown-item" href="#">Trellis/Arches</a></li>
+              <li><a class="dropdown-item" href="#">Outdoor Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Structures & Dreams</a></li>
+  
+              <!-- Firewood (header link) -->
+              <li><a class="dropdown-header" href="#">Firewood</a></li>
+  
+              <!-- Biochar (header link) -->
+              <li><a class="dropdown-header" href="#">Biochar</a></li>
+  
             </ul>
           </li>
-
+  
           <!-- Services -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/mobile-sawmill/">Mobile Sawmill</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/forestry-services/">Forestry Services</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/services/installation/">Installation</a></li>
+              <li><a class="dropdown-item" href="#">Forestry Services</a></li>
+              <li><a class="dropdown-item" href="#">Sawmilling</a></li>
+              <li><a class="dropdown-item" href="#">Installation</a></li>
             </ul>
           </li>
-
+  
           <!-- About -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/why-sweet-chestnut/">Why Sweet Chestnut?</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/about-say-it-with-wood/meet-the-team/">Meet the Team</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/about-say-it-with-wood/testimonials/">Testimonials</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/galleries/">Galleries</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/about-say-it-with-wood/website-links/">Links</a></li>
-              <li><a class="dropdown-item" href="https://www.sayitwithwood.co.uk/privacy-policy/">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="#">Why Chestnut?</a></li>
+              <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
             </ul>
           </li>
-
+  
           <!-- Contact -->
           <li class="nav-item">
-            <a class="nav-link" href="https://www.sayitwithwood.co.uk/contact-say-it-with-wood/">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
+  
         </ul>
       </div>
     </div>
   </nav>
+  
+  
 
   <!-- 3-Column Row -->
   <div class="container my-5">
