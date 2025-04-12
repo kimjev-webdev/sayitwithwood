@@ -107,19 +107,31 @@
   font-size: 14px;
 }
 
-    .dropdown-menu .dropdown-item:hover {
+    .dropdown-menu.dropdown-item:hover, .dropdown-menu.dropdown-item:focus {
+      color: #fff;
       background-color: #c50404;
+      border-radius: 15px;
+    }
+
+    a.nav-link.dropdown-toggle:hover, a.nav-link.dropdown-toggle:focus {
+      color: #fff;
+background-color: #c50404;
+border-radius: 15px;
+    }
+
+    a.nav-link.dropdown-toggle, a.nav-link {
+      font-size: 1.2rem;
     }
 
     .social-icons a {
       color: #000000;
-      text-shadow: #c50404;
       margin-right: 1rem;
       font-size: 1.5rem; /* doubled size */
     }
 
     .social-icons a:hover {
-      color:  #c50404;
+      color:  #fff;
+
     }
 
     .logo {
