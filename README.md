@@ -1,6 +1,6 @@
 # sayitwithwood
 
-NAVIGATION ORGANIZATION - 
+NAVIGATION ORGANIZATION - FIRST AND FOREMOST NAVIGATON MENU HAS BEEN MOVED TO THE TOP OF THE PAGE WHICH  IS MORE CONVENTIONALLY APPROPRIATE. 
 
  1. Guides Users by Purpose, Not Just Product Names
 Customers don’t always know exactly what product they need — they know what problem they're solving:

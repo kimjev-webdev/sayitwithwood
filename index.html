@@ -70,12 +70,19 @@
 
   <style>
     body {
-      padding-top: 1rem;
       font-family: "hobo-std", sans-serif;
+      background-color: #fff3e9;
+    }
+
+    .indexheader {
+      margin: 0 0;
+      padding: 0 0; 
     }
 
     .navbar {
-      background-color: #ad7948;
+      background-color: #80766d;
+      border-bottom: #000000;
+      width: 100vw;
     }
 
     .navbar-nav .nav-link,
@@ -92,11 +99,13 @@
     a.dropdown-header {
       font-size: 1.2rem;
       text-decoration: none;
-      color: #FFF;
+      color: #fff3e9;
     }
 
+  
+
     a.dropdown-header:hover {
-      background-color: #c50404;
+      background-color: #a4352a;
     }
 
     .navbar .dropdown-menu .dropdown-item {
@@ -108,14 +117,14 @@
 }
 
     .dropdown-menu.dropdown-item:hover, .dropdown-menu.dropdown-item:focus {
-      color: #fff;
-      background-color: #c50404;
+      color: #fff3e9;
+      background-color: #a4352a;
       border-radius: 15px;
     }
 
     a.nav-link.dropdown-toggle:hover, a.nav-link.dropdown-toggle:focus {
-      color: #fff;
-background-color: #c50404;
+      color: #fff3e9;
+background-color: #a4352a;
 border-radius: 15px;
     }
 
@@ -130,7 +139,7 @@ border-radius: 15px;
     }
 
     .social-icons a:hover {
-      color:  #fff;
+      color:  #fff3e9;
 
     }
 
@@ -237,44 +246,50 @@ border-radius: 15px;
   
 
   <!-- 3-Column Row -->
-  <div class="container my-5">
-    <div class="row align-items-center text-center text-lg-start">
+  <div class="container-fluid my-4">
+    <div class="row align-items-center text-center text-lg-start indexheader">
 
       <!-- Facebook Widget -->
-      <div class="col-4">
-        <div class="fb-page"
-             data-href="https://www.facebook.com/sayitwithwood"
-             data-tabs="timeline"
-             data-width=""
-             data-height="300"
-             data-small-header="false"
-             data-adapt-container-width="true"
-             data-hide-cover="false"
-             data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/sayitwithwoodchestnut" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/sayitwithwoodchestnut">Say It With Wood</a>
-          </blockquote>
-        </div>
-      </div>
+     <!-- Facebook Widget -->
+<div class="col-12 col-md-4">
+  <div class="fb-page"
+       data-href="https://www.facebook.com/sayitwithwoodchesnut"
+       data-tabs="timeline"
+       data-width=""
+       data-height="300"
+       data-small-header="false"
+       data-adapt-container-width="true"
+       data-hide-cover="false"
+       data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/sayitwithwoodchesnut" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/sayitwithwoodchesnut">Say It With Wood</a>
+    </blockquote>
+  </div>
+</div>
+
 
       <!-- Logo -->
-      <div class="col-4 text-center">
-        <img src="logo.webp" alt="Say It With Wood Logo" class="img-fluid logo">
+      <div class="col-12 col-md-4 text-center logocol">
+        <img src="swwlogo.webp" alt="Say It With Wood Logo" class="img-fluid logo">
       </div>
 
       <!-- Contact Info -->
-      <div class="col-4">
+      <div class="col-12 col-md-4">
+        <p class="mb-2">
+          <i class="fas fa-map-marker-alt me-2"></i>
+          The Grain Store, Canon Frome, HR8 2TE
+        </p>
+        <p class="mb-2">
+          <i class="fas fa-clock me-2"></i>
+          Monday - Friday, 8.30 am - 4.00 pm 
+        </p>
         <p class="mb-2">
           <i class="fas fa-envelope me-2"></i>
           <a href="mailto:info@sayitwithwood.co.uk" class="text-decoration-none text-dark">info@sayitwithwood.co.uk</a>
         </p>
-        <p class="mb-2">
+        <p class="mb-0">
           <i class="fas fa-phone me-2"></i>
           <a href="tel:07958345833" class="text-decoration-none text-dark">07958 345 833</a>
-        </p>
-        <p class="mb-0">
-          <i class="fas fa-clock me-2"></i>
-          Monday to Friday, 8.30 am – 4.00 pm
         </p>
       </div>
 
