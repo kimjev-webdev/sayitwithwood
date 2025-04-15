@@ -1,5 +1,8 @@
 # sayitwithwood
 
+The site’s navigation has been reorganized to prioritize clarity, usability, and alignment with core audiences. Chestnut fencing — the company’s signature product — is now given top billing under the “Fencing & Boundaries” category to immediately showcase what Say It With Wood is best known for. Following this, the “Rural Materials” section caters specifically to the needs of the primary audience: farmers, landowners, and estate managers looking for practical, sustainable materials for their land. Finally, “Garden & Outdoor Living” groups products that appeal more directly to our secondary audience — commercial clients, landscapers, and garden-focused customers — offering crafted features suited for decorative or recreational outdoor spaces. This hierarchy reflects both the brand’s identity and the expectations of its users.
+
+
 NAVIGATION ORGANIZATION - FIRST AND FOREMOST NAVIGATON MENU HAS BEEN MOVED TO THE TOP OF THE PAGE WHICH  IS MORE CONVENTIONALLY APPROPRIATE. 
 
  1. Guides Users by Purpose, Not Just Product Names
