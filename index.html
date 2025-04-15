@@ -35,19 +35,19 @@
     "image": "https://www.sayitwithwood.co.uk/images/logo.png",
     "@id": "https://www.sayitwithwood.co.uk",
     "url": "https://www.sayitwithwood.co.uk",
-    "telephone": "+44-7958-345833",
+    "telephone": "+44-7958-345-833",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Woodland Yard, Chestnut Lane",
+      "streetAddress": "The Grainstore, Canon Frome, Ledbury",
       "addressLocality": "Herefordshire",
       "addressRegion": "West Midlands",
-      "postalCode": "HR1 1AA",
+      "postalCode": "HR8 2TE",
       "addressCountry": "GB"
     },
     "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 52.0567,
-      "longitude": -2.7160
+      "@type": "GeoCoordinates",     
+      "latitude": 52.09320002837836,
+      "longitude": -2.5073180558179313
     },
     "openingHours": "Mo-Fr 08:30-16:00",
     "sameAs": [
@@ -72,6 +72,14 @@
     body {
       font-family: "hobo-std", sans-serif;
       background-color: #fff3e9;
+    }
+
+    .continfo {
+      font-size: 14px;
+    }
+
+    .logocol {
+      margin-bottom: 20px;
     }
 
     .indexheader {
@@ -101,8 +109,6 @@
       text-decoration: none;
       color: #fff3e9;
     }
-
-  
 
     a.dropdown-header:hover {
       background-color: #a4352a;
@@ -147,6 +153,13 @@ border-radius: 15px;
       max-width: 300px; /* doubled size */
     }
 
+    @media (min-width: 768px) {
+  .logocol {
+    padding: 0 60px 0 0px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -154,8 +167,7 @@ border-radius: 15px;
 
   <!-- Facebook SDK -->
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0"></script>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
@@ -250,26 +262,29 @@ border-radius: 15px;
   
 
   <!-- 3-Column Row -->
-  <div class="container-fluid my-4">
+  <div class="container my-4">
     <div class="row align-items-center text-center text-lg-start indexheader">
 
-      <!-- Facebook Widget -->
-     <!-- Facebook Widget -->
-<div class="col-12 col-md-4">
-  <div class="fb-page"
-       data-href="https://www.facebook.com/sayitwithwoodchesnut"
-       data-tabs="timeline"
-       data-width=""
-       data-height="300"
-       data-small-header="false"
-       data-adapt-container-width="true"
-       data-hide-cover="false"
-       data-show-facepile="true">
-    <blockquote cite="https://www.facebook.com/sayitwithwoodchesnut" class="fb-xfbml-parse-ignore">
-      <a href="https://www.facebook.com/sayitwithwoodchesnut">Say It With Wood</a>
-    </blockquote>
+   <!-- Contact Info -->
+   <div class="col-12 col-md-4 continfo">
+    <p class="mb-2">
+      <i class="fas fa-map-marker-alt me-2"></i>
+     The Grain Store, Canon Frome, HR8 2TE
+    </p>
+    <p class="mb-2">
+      <i class="fas fa-clock me-2"></i>
+      Monday - Friday, 8.30 am - 4.00 pm 
+    </p>
+    <p class="mb-2">
+      <i class="fas fa-envelope me-2"></i>
+      <a href="mailto:info@sayitwithwood.co.uk" class="text-decoration-none text-dark">info@sayitwithwood.co.uk</a>
+    </p>
+    <p class="mb-0">
+      <i class="fas fa-phone me-2"></i>
+      <a href="tel:07958345833" class="text-decoration-none text-dark">07958 345 833</a>
+    </p>
   </div>
-</div>
+
 
 
       <!-- Logo -->
@@ -277,25 +292,13 @@ border-radius: 15px;
         <img src="swwlogo.webp" alt="Say It With Wood Logo" class="img-fluid logo">
       </div>
 
-      <!-- Contact Info -->
+      <!-- FB -->
+
       <div class="col-12 col-md-4">
-        <p class="mb-2">
-          <i class="fas fa-map-marker-alt me-2"></i>
-          The Grain Store, Canon Frome, HR8 2TE
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-clock me-2"></i>
-          Monday - Friday, 8.30 am - 4.00 pm 
-        </p>
-        <p class="mb-2">
-          <i class="fas fa-envelope me-2"></i>
-          <a href="mailto:info@sayitwithwood.co.uk" class="text-decoration-none text-dark">info@sayitwithwood.co.uk</a>
-        </p>
-        <p class="mb-0">
-          <i class="fas fa-phone me-2"></i>
-          <a href="tel:07958345833" class="text-decoration-none text-dark">07958 345 833</a>
-        </p>
+        <div class="fb-page" data-href="https://www.facebook.com/sayitwithwoodchestnut" data-tabs="timeline" data-width="400" data-height="260" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sayitwithwoodchestnut" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sayitwithwoodchestnut">Say It With Wood</a></blockquote></div>
       </div>
+
+     
 
     </div>
   </div>
