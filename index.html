@@ -87,6 +87,10 @@
   display: block;
 }
 
+.dropdown-submenu > .dropdown-menu.show {
+  display: block;
+}
+
     body {
       font-family: "hobo-std", sans-serif;
       background-color: #fff3e9;
@@ -388,6 +392,42 @@ border-radius: 15px;
       });
     });
   </script>
+
+  <!-- js for menu expansion-->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const submenuTriggers = document.querySelectorAll(".dropdown-submenu > a");
+
+    submenuTriggers.forEach(trigger => {
+      trigger.addEventListener("mouseenter", function () {
+        closeOtherSubmenus(this);
+        const nextMenu = this.nextElementSibling;
+        if (nextMenu) nextMenu.classList.add("show");
+      });
+
+      trigger.addEventListener("click", function (e) {
+        e.preventDefault(); // prevent following the href
+        closeOtherSubmenus(this);
+        const nextMenu = this.nextElementSibling;
+        if (nextMenu) nextMenu.classList.toggle("show");
+      });
+
+      trigger.parentElement.addEventListener("mouseleave", function () {
+        const submenu = this.querySelector(".dropdown-menu");
+        if (submenu) submenu.classList.remove("show");
+      });
+    });
+
+    function closeOtherSubmenus(current) {
+      document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(menu => {
+        if (!menu.previousElementSibling.isSameNode(current)) {
+          menu.classList.remove("show");
+        }
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>
