@@ -236,6 +236,9 @@ border-radius: 15px;
     padding-left: 1rem;
     border-left: 3px solid #ad7948;
     transition: all 0.3s ease;
+     border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
   }
 
   /* Highlight parent item when submenu is open */
@@ -244,6 +247,12 @@ border-radius: 15px;
     color: white !important;
     border-radius: 5px;
   }
+
+    .dropdown-submenu > .dropdown-menu .dropdown-item {
+    border: none !important;
+    outline: none !important;
+  }
+}
 }
 
 
