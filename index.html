@@ -79,6 +79,7 @@
   color: black;
 }
   
+/* Default (desktop): submenus to the right */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -86,6 +87,24 @@
   display: none;
   position: absolute;
 }
+
+/* Mobile: stack submenus below parent item */
+@media (max-width: 991.98px) {
+  .dropdown-submenu > .dropdown-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    display: none;
+    padding-left: 1rem;
+    background-color: #c08c56; /* optional: separate tone on mobile */
+  }
+
+  .dropdown-submenu.show > .dropdown-menu {
+    display: block;
+  }
+}
+
 
 .dropdown-submenu:hover > .dropdown-menu,
 .dropdown-submenu:focus-within > .dropdown-menu {
@@ -228,10 +247,9 @@ border-radius: 15px;
   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
   <ul class="dropdown-menu">
 
-    <!-- Section Header -->
+    <!-- Fencing & Boundaries -->
     <li><a class="dropdown-header" href="#">Fencing & Boundaries</a></li>
 
-    <!-- Agricultural Fencing -->
     <li class="dropdown-submenu dropdown-item">
       <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Agricultural Fencing</a>
       <ul class="dropdown-menu">
@@ -242,7 +260,6 @@ border-radius: 15px;
       </ul>
     </li>
 
-    <!-- Cleft & Sawn Fencing -->
     <li class="dropdown-submenu dropdown-item">
       <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Cleft & Sawn Fencing</a>
       <ul class="dropdown-menu">
@@ -252,7 +269,6 @@ border-radius: 15px;
       </ul>
     </li>
 
-    <!-- Screening & Panels -->
     <li class="dropdown-submenu dropdown-item">
       <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Screening & Panels</a>
       <ul class="dropdown-menu">
@@ -262,7 +278,6 @@ border-radius: 15px;
       </ul>
     </li>
 
-    <!-- Gates & Entrances (New Simple Item) -->
     <li><a class="dropdown-item" href="#">Gates & Entrances</a></li>
 
     <!-- Timber & Materials -->
@@ -275,7 +290,16 @@ border-radius: 15px;
     <!-- Garden & Outdoor Living -->
     <li><a class="dropdown-header" href="#">Garden & Outdoor Living</a></li>
     <li><a class="dropdown-item" href="#">Structures & Dreams</a></li>
-    <li><a class="dropdown-item" href="#">Trellis & Arches</a></li>
+
+    <li class="dropdown-submenu dropdown-item">
+      <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Trellis & Arches</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Trellis</a></li>
+        <li><a class="dropdown-item" href="#">Rose Arches</a></li>
+        <li><a class="dropdown-item" href="#">Pergolas & Gazebos</a></li>
+      </ul>
+    </li>
+
     <li><a class="dropdown-item" href="#">Outdoor Furniture</a></li>
     <li><a class="dropdown-item" href="#">Biochar</a></li>
 
